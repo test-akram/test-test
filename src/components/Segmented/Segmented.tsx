@@ -1,6 +1,7 @@
 "use client"
 import { useRef, useState } from "react"
-import { Carousel } from '@/components/Carousel/Carousel'
+import Carousel from '@/components/Carousel/Carousel'
+
 
 const Segmented = () => {
   const [selectedValue1, setSelectedValue1] = useState("complete")
@@ -31,7 +32,21 @@ const Segmented = () => {
           }
         ]}
       />
-      <p className="selected-item">Selected: {selectedValue2}</p>
+      <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0  lg:mx-auto xl:max-w-none xl:mx-0"><div className="rounded-lg shadow-sm divide-y divide-zinc-600 bg-zinc-900 border border-pink-500">
+      <div className="p-6">
+                  <h2 className="text-2xl leading-6 font-semibold text-white">
+                  {selectedValue2}
+                  </h2>
+                  <p className="mt-4 text-zinc-300">{selectedValue2}</p>
+                  <p className="mt-8">
+                    <span className="text-5xl font-extrabold white">
+                    {selectedValue2}
+                    </span>
+                    <span className="text-base font-medium text-zinc-100">{selectedValue2}
+                    </span>
+                  </p>
+                  </div>
+</div></div>
     </div>
   );
 };

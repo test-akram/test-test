@@ -16,7 +16,7 @@ import HeaderLogo from './HeaderLogo'
 
 const Header = () => {
 
-  const { DemoModal, setShowDemoModal } = useDemoModal();
+  const { SubscribeModal, setShowDemoModal } = useDemoModal();
 
   const pathname = usePathname()
   const { query } = useKBar()
@@ -46,8 +46,13 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-                          <li key="Blog">
-                <Link
+<li key="Blog">
+<SubscribeModal />
+      <button
+        onClick={() => setShowDemoModal(true)}
+        className="flex w-40 items-center justify-center rounded-md border border-gray-300 px-3 py-2 transition-all duration-75 hover:border-gray-800 focus:outline-none active:bg-gray-100"
+      >
+                        <Link
                   className={clsx(
                     'rounded px-3 py-2 text-sm font-medium transition-colors duration-300',
                     {
@@ -62,6 +67,9 @@ const Header = () => {
                 >
                   Blog
                 </Link>
+      </button>
+                          
+
               </li>
           </ul>
           <button

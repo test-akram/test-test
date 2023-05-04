@@ -19,8 +19,8 @@ const HomePage = () => {
     <>
       <Hero />
       <Projects />
-
       <Segmented />
+      
     </>
   )
 }

@@ -32,7 +32,7 @@ const Segmented = () => {
           }
         ]}
       />
-      <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0  lg:mx-auto xl:max-w-none xl:mx-0"><div className="rounded-lg shadow-sm divide-y divide-zinc-600 bg-zinc-900 border border-pink-500">
+      <div className="mt-8 space-y-2 sm:mt-8 sm:space-y-0  lg:mx-auto xl:max-w-none xl:mx-0"><div className="rounded-lg shadow-sm divide-y divide-zinc-600 bg-zinc-900 border border-pink-500">
       <div className="p-6">
                   <h2 className="text-2xl leading-6 font-semibold text-white">
                   {selectedValue2}

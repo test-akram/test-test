@@ -6,6 +6,7 @@ import { useKBar } from 'kbar'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
+import useDemoModal from '@/components/SubscribeModal/SubscribeModal'
 
 import Dropdown from '@/components/Dropdown'
 
@@ -14,6 +15,9 @@ import { HEADER_LINKS } from '@/config/links'
 import HeaderLogo from './HeaderLogo'
 
 const Header = () => {
+
+  const { DemoModal, setShowDemoModal } = useDemoModal();
+
   const pathname = usePathname()
   const { query } = useKBar()
 
@@ -42,6 +46,23 @@ const Header = () => {
                 </Link>
               </li>
             ))}
+                          <li key="Blog">
+                <Link
+                  className={clsx(
+                    'rounded px-3 py-2 text-sm font-medium transition-colors duration-300',
+                    {
+                      ['text-accent-5 hover:bg-accent-1 hover:text-hong-fg']:
+                      "http://www.akrem.me" !== pathname,
+                    },
+                    {
+                      ['bg-accent-2']: "http://www.akrem.me" === pathname,
+                    }
+                  )}
+                  href="http://www.akrem.me"
+                >
+                  Blog
+                </Link>
+              </li>
           </ul>
           <button
             className='flex h-9 w-9 items-center justify-center rounded-md duration-300 hover:bg-accent-2'
@@ -50,8 +71,10 @@ const Header = () => {
             aria-label='Open Command Bar'
             title='Open Command Bar'
           >
+            
             <IconCommand size={20} />
           </button>
+          
           <Dropdown>
             <Dropdown.Trigger>
               <button

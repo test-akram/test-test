@@ -1,69 +1,80 @@
-// 'use client'
+"use client";
 
-import * as DialogPrimitives from '@radix-ui/react-dialog'
-import React from 'react'
+import {
+  Dispatch,
+  SetStateAction,
+  useCallback,
+  useEffect,
+  useRef,
+} from "react";
+import FocusTrap from "focus-trap-react";
+import { AnimatePresence, motion } from "framer-motion";
+import  Leaflet from "@/components/Leaflet/Leaflet"
+import useWindowSize from "@/lib/hooks/use-window-size";
 
-const Modal = (props: DialogPrimitives.DialogProps) => (
-  <DialogPrimitives.Root {...props} />
-)
+export default function Modal({
+  children,
+  showModal,
+  setShowModal,
+}: {
+  children: React.ReactNode;
+  showModal: boolean;
+  setShowModal: Dispatch<SetStateAction<boolean>>;
+}) {
+  const desktopModalRef = useRef(null);
 
-const Trigger = (props: DialogPrimitives.DialogTriggerProps) => {
-  const { children, ...rest } = props
+  const onKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setShowModal(false);
+      }
+    },
+    [setShowModal],
+  );
 
-  return (
-    <DialogPrimitives.Trigger asChild={typeof children !== 'string'} {...rest}>
-      {children}
-    </DialogPrimitives.Trigger>
-  )
-}
+  useEffect(() => {
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [onKeyDown]);
 
-const Content = (props: DialogPrimitives.DialogContentProps) => {
-  const { children, ...rest } = props
-
-  return (
-    <DialogPrimitives.Portal>
-      <DialogPrimitives.Overlay className='animate-in fade-in fixed inset-0 z-40 bg-black/50 opacity-100 transition-opacity' />
-      <DialogPrimitives.Content
-        className='fixed left-1/2 top-1/2 z-50 w-full max-w-md -translate-x-1/2 -translate-y-1/2 rounded-lg border border-accent-2 bg-accent-1 p-4'
-        {...rest}
-      >
-        {children}
-      </DialogPrimitives.Content>
-    </DialogPrimitives.Portal>
-  )
-}
-
-const Title = (props: DialogPrimitives.DialogTitleProps) => {
-  const { children, ...rest } = props
-
-  return <DialogPrimitives.Title {...rest}>{children}</DialogPrimitives.Title>
-}
-
-const Description = (props: DialogPrimitives.DialogDescriptionProps) => {
-  const { children, ...rest } = props
+  const { isMobile, isDesktop } = useWindowSize();
 
   return (
-    <DialogPrimitives.Description {...rest}>
-      {children}
-    </DialogPrimitives.Description>
-  )
+    <AnimatePresence>
+      {showModal && (
+        <>
+          {isMobile && <Leaflet setShow={setShowModal}>{children}</Leaflet>}
+          {isDesktop && (
+            <>
+              <FocusTrap focusTrapOptions={{ initialFocus: false }}>
+                <motion.div
+                  ref={desktopModalRef}
+                  key="desktop-modal"
+                  className="fixed inset-0 z-40 hidden min-h-screen items-center justify-center md:flex"
+                  initial={{ scale: 0.95 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0.95 }}
+                  onMouseDown={(e) => {
+                    if (desktopModalRef.current === e.target) {
+                      setShowModal(false);
+                    }
+                  }}
+                >
+                  {children}
+                </motion.div>
+              </FocusTrap>
+              <motion.div
+                key="desktop-backdrop"
+                className="fixed inset-0 z-30 bg-gray-100 bg-opacity-10 backdrop-blur"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setShowModal(false)}
+              />
+            </>
+          )}
+        </>
+      )}
+    </AnimatePresence>
+  );
 }
-
-const Close = (props: DialogPrimitives.DialogCloseProps) => {
-  const { children, ...rest } = props
-
-  return (
-    <DialogPrimitives.Close asChild={typeof children !== 'string'} {...rest}>
-      {children}
-    </DialogPrimitives.Close>
-  )
-}
-
-Modal.displayName = 'Modal'
-Modal.Trigger = Trigger
-Modal.Content = Content
-Modal.Title = Title
-Modal.Description = Description
-Modal.Close = Close
-
-export default Modal

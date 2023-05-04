@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 
 import * as DialogPrimitives from '@radix-ui/react-dialog'
 import React from 'react'

@@ -9,7 +9,6 @@ import Tree from './Tree'
 
 const MDXComponents = {
   a: Link,
-  Image,
   pre: Pre,
 
   // Custom components
@@ -18,6 +17,7 @@ const MDXComponents = {
   Kbd,
   Tree,
   Colors,
+  Image,
 }
 
 export default MDXComponents

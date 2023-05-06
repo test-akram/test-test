@@ -1,4 +1,9 @@
-import { IconBrandFirebase, IconFriends } from '@tabler/icons-react'
+import {
+  IconBrandAzure,
+  IconBrandFirebase,
+  IconBrandGolang,
+  IconFriends,
+} from '@tabler/icons-react'
 import {
   IconBook2,
   IconBrandTailwind,
@@ -9,9 +14,11 @@ import {
   IconTools,
 } from '@tabler/icons-react'
 import {
+  IconBrandDjango,
   IconBrandNextjs,
   IconBrandPlanetscale,
   IconBrandPrisma,
+  IconBrandPython,
   IconBrandTypescript,
   IconMarkdown,
 } from '@tabler/icons-react'
@@ -59,6 +66,18 @@ const getIconByName = (name: string) => {
     }
     case 'Firebase': {
       return IconBrandFirebase
+    }
+    case 'Python': {
+      return IconBrandPython
+    }
+    case 'Django': {
+      return IconBrandDjango
+    }
+    case 'Go': {
+      return IconBrandGolang
+    }
+    case 'Azure': {
+      return IconBrandAzure
     }
     default: {
       throw Error('Icon not found')

@@ -1,14 +1,13 @@
 import {
-  IconBrandFacebook,
   IconBrandGithub,
-  IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandTwitter,
-  IconBrandYoutube,
   IconChartBar,
   IconDeviceDesktop,
+  IconFileDownload,
   IconFlame,
   IconPencil,
+  IconTrophy,
   IconUserCircle,
 } from '@tabler/icons-react'
 import type { Route } from 'next'
@@ -41,6 +40,16 @@ type FooterSocialMediaLinks = {
 
 export const HEADER_LINKS: HeaderLinks = [
   {
+    icon: <IconUserCircle />,
+    href: '/about',
+    text: 'About',
+  },
+  {
+    icon: <IconTrophy />,
+    href: '/achievements',
+    text: 'Achievements',
+  },
+  {
     icon: <IconChartBar />,
     href: '/dashboard',
     text: 'Dashboard',
@@ -50,11 +59,7 @@ export const HEADER_LINKS: HeaderLinks = [
     href: '/projects',
     text: 'Projects',
   },
-  {
-    icon: <IconUserCircle />,
-    href: '/about',
-    text: 'About',
-  },
+
   {
     icon: <IconDeviceDesktop />,
     href: '/uses',
@@ -137,22 +142,10 @@ export const HERO_LINKS: HeroLinks = [
     href: 'https://github.com/tszhong0411',
   },
   {
-    id: 'instagram',
-    label: 'Instagram',
-    icon: <IconBrandInstagram size={28} />,
-    href: 'https://www.instagram.com/tszhong0411/',
-  },
-  {
-    id: 'youtube',
-    label: 'YouTube',
-    icon: <IconBrandYoutube size={28} />,
-    href: 'https://www.youtube.com/@tszhong0411',
-  },
-  {
-    id: 'facebook',
-    label: 'Facebook',
-    icon: <IconBrandFacebook size={28} />,
-    href: 'https://www.facebook.com/tszhonglai.0411/',
+    id: 'github',
+    label: 'GitHub',
+    icon: <IconFileDownload size={28} />,
+    href: 'https://github.com/tszhong0411',
   },
   {
     id: 'twitter',

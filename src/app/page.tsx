@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
 // import Image from 'next/image'
-//import Card from '@/components/Card/Card'
+// import Card from '@/components/Card/Card'
 import Hero from '@/components/Home/Hero'
 import Projects from '@/components/Home/Projects'
 import MDXComponents from '@/components/MDXComponents'
@@ -14,7 +14,7 @@ import Segmented from '@/components/Segmented/Segmented'
 // import Tooltip from '@/components/Tooltip/Tooltip'
 import { site } from '@/config/site'
 
-const icons: string[] = ['django', 'python', 'javascript'] // array of icon names
+// const icons: string[] = ['django', 'python', 'javascript'] // array of icon names
 
 export const metadata: Metadata = {
   alternates: {

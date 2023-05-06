@@ -70,15 +70,15 @@
     background-color: rgba(255, 255, 255, 0.3);
     transition: all 0.2s ease-in-out;
   }
-  
+
   .highlight.width {
     width: var(--highlight-width);
   }
-  
+
   .highlight.pos {
     transform: translateX(var(--highlight-x-pos));
   }
-  
+
  /* test */
 
  .selected-item {

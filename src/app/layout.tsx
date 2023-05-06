@@ -95,7 +95,7 @@ const RootLayout = (props: RootLayoutProps) => {
 
   return (
     <html lang='en-US' className={clsx('font-sans')}>
-      <body className='overflow-x-hidden bg-opacity-75 bg-gradient-to-r from-black-700 via-fuchsia-500 to-gray-500 font-default text-hong-fg'>
+      <body className='from-black-700 overflow-x-hidden bg-opacity-75 bg-gradient-to-r via-fuchsia-500 to-gray-500 font-default text-hong-fg'>
         <KBar>
           <Header />
           <main className='relative mx-auto mb-16 max-w-4xl px-8 py-4'>

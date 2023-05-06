@@ -1,19 +1,20 @@
-"use client"
+'use client'
 
-import { useRef, useState, useEffect } from "react";
+import { useEffect, useRef, useState } from 'react'
+// import style from 'styled-jsx/style'
 
 interface Segment {
-  label: string;
-  value: string;
-  ref: React.MutableRefObject<HTMLDivElement>;
+  label: string
+  value: string
+  ref: React.MutableRefObject<HTMLDivElement | undefined>
 }
 
 interface CarouselProps {
-  name: string;
-  segments: Segment[];
-  callback: (value: string, index: number) => void;
-  defaultIndex?: number;
-  controlRef: React.MutableRefObject<HTMLDivElement>;
+  name: string
+  segments: Segment[]
+  callback: (value: string, index: number) => void
+  defaultIndex?: number
+  // controlRef: React.MutableRefObject<HTMLDivElement>
 }
 
 const Carousel: React.FC<CarouselProps> = ({
@@ -21,53 +22,57 @@ const Carousel: React.FC<CarouselProps> = ({
   segments,
   callback,
   defaultIndex = 0,
-  controlRef,
+  // controlRef,
 }) => {
-  const [activeIndex, setActiveIndex] = useState(defaultIndex);
-  const componentReady = useRef<boolean>(false);
+  const [activeIndex, setActiveIndex] = useState(defaultIndex)
+  const componentReady = useRef<boolean>(false)
 
   // Determine when the component is "ready"
   useEffect(() => {
-    componentReady.current = true;
-  }, []);
+    componentReady.current = true
+  }, [])
 
   useEffect(() => {
-    const activeSegmentRef = segments[activeIndex].ref;
-    const { offsetWidth, offsetLeft } = activeSegmentRef.current;
-    const { style } = controlRef.current;
+    const activeSegmentRef = segments[activeIndex].ref
+    if (!activeSegmentRef.current) return
+    // const { offsetWidth, offsetLeft } = activeSegmentRef.current
+    // const { style } = controlRef.current
 
-    style.setProperty("--highlight-width", `${offsetWidth}px`);
-    style.setProperty("--highlight-x-pos", `${offsetLeft}px`);
-  }, [activeIndex, callback, controlRef, segments]);
+    // style.setProperty('--highlight-width', `${offsetWidth}px`)
+    // style.setProperty('--highlight-x-pos', `${offsetLeft}px`)
+  }, [activeIndex, callback, segments])
 
   const onInputChange = (value: string, index: number) => {
-    setActiveIndex(index);
-    callback(value, index);
-  };
+    setActiveIndex(index)
+    callback(value, index)
+  }
 
   return (
-    <div className="controls-container" ref={controlRef}>
-      <div className={`controls ${componentReady.current ? "ready" : "idle"}`}>
-        {segments?.map((item, i) => (
-          <div
-            key={item.value}
-            className={`segment ${i === activeIndex ? "active" : "inactive"}`}
-            ref={item.ref}
-          >
-            <input
-              type="radio"
-              value={item.value}
-              id={item.label}
-              name={name}
-              onChange={() => onInputChange(item.value, i)}
-              checked={i === activeIndex}
-            />
-            <label htmlFor={item.label}>{item.label}</label>
-          </div>
-        ))}
+    // <div className='controls-container' ref={controlRef}>
+    <div className='controls-container flex flex-wrap'>
+      <div className={`controls ${componentReady.current ? 'ready' : 'idle'}`}>
+        {segments?.length &&
+          segments.map((item, i) => (
+            <div
+              key={item.value}
+              className={`segment ${
+                i === activeIndex ? 'active' : 'inactive'
+              } flex-row`}
+            >
+              <input
+                type='radio'
+                value={item.value}
+                id={item.label}
+                name={name}
+                onChange={() => onInputChange(item.value, i)}
+                checked={i === activeIndex}
+              />
+              <label htmlFor={item.label}>{item.label}</label>
+            </div>
+          ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Carousel

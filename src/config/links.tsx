@@ -8,6 +8,7 @@ import {
   IconChartBar,
   IconDeviceDesktop,
   IconFlame,
+  IconPencil,
   IconUserCircle,
 } from '@tabler/icons-react'
 import type { Route } from 'next'
@@ -58,6 +59,11 @@ export const HEADER_LINKS: HeaderLinks = [
     icon: <IconDeviceDesktop />,
     href: '/uses',
     text: 'Uses',
+  },
+  {
+    icon: <IconPencil />,
+    href: '/blog',
+    text: 'Blog',
   },
 ]
 

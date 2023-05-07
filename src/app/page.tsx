@@ -35,6 +35,7 @@ const HomePage = () => {
       <div className='col-span-7'></div>
       <Hero />
       <Projects />
+      <h2 className='mb-8 text-3xl font-bold'>Services</h2>
       <div className='my-16 flex flex-col'>
         <MDXComponent
           components={{

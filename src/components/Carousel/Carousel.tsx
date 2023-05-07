@@ -35,11 +35,6 @@ const Carousel: React.FC<CarouselProps> = ({
   useEffect(() => {
     const activeSegmentRef = segments[activeIndex].ref
     if (!activeSegmentRef.current) return
-    // const { offsetWidth, offsetLeft } = activeSegmentRef.current
-    // const { style } = controlRef.current
-
-    // style.setProperty('--highlight-width', `${offsetWidth}px`)
-    // style.setProperty('--highlight-x-pos', `${offsetLeft}px`)
   }, [activeIndex, callback, segments])
 
   const onInputChange = (value: string, index: number) => {
@@ -48,7 +43,6 @@ const Carousel: React.FC<CarouselProps> = ({
   }
 
   return (
-    // <div className='controls-container' ref={controlRef}>
     <div className='controls-container flex flex-wrap'>
       <div className={`controls ${componentReady.current ? 'ready' : 'idle'}`}>
         {segments?.length &&

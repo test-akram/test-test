@@ -42,7 +42,7 @@ const ProjectsPage = () => {
     <>
       <PageTitle
         title='Projects'
-        description='The list of my projects. Everything was made with ❤️.'
+        description='Some of my projects that I have worked on lately, feel free to contribute to them.'
       />
       <div className='flex flex-col gap-4'>
         {allProjects.map((project) => {

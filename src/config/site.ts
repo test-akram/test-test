@@ -17,13 +17,13 @@ export const site: Site = {
     process.env.NODE_ENV === 'production'
       ? 'https://honghong.me'
       : 'http://localhost:3000',
-  logo: 'https://honghong.me/static/images/avatar.png',
-  title: '小康',
-  name: '小康',
+  logo: 'https://akrem.me/static/images/avatar.png',
+  title: 'Akrem',
+  name: 'Akrem',
   keywords: ['tszhong0411', 'Next.js', 'React', 'TypeScript', 'Node.js'],
-  titleTemplate: '- 小康',
-  description: '小康 – 17 yrs • Student • Full-stack Web Development Student',
-  githubUsername: 'tszhong0411',
+  titleTemplate: '- Akrem',
+  description: 'Akrem • ICT engineering student • Freelancer',
+  githubUsername: 'BarriBarri20',
   favicons: [
     {
       rel: 'icon',

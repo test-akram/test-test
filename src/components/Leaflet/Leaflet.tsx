@@ -19,7 +19,10 @@ export default function Leaflet({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  async function handleDragEnd(_: unknown, info: unknown) {
+  async function handleDragEnd(
+    _: unknown,
+    info: { offset: { y: number }; velocity: { y: number } }
+  ) {
     const offset = info.offset.y
     const velocity = info.velocity.y
     const height = leafletRef.current?.getBoundingClientRect().height || 0

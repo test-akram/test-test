@@ -2,11 +2,11 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandTwitter,
-  IconChartBar,
-  IconDeviceDesktop,
   IconFileDownload,
   IconFlame,
   IconPencil,
+  IconPhone,
+  IconStack,
   IconTrophy,
   IconUserCircle,
 } from '@tabler/icons-react'
@@ -50,25 +50,25 @@ export const HEADER_LINKS: HeaderLinks = [
     text: 'Achievements',
   },
   {
-    icon: <IconChartBar />,
-    href: '/dashboard',
-    text: 'Dashboard',
-  },
-  {
     icon: <IconFlame />,
     href: '/projects',
     text: 'Projects',
   },
 
   {
-    icon: <IconDeviceDesktop />,
-    href: '/uses',
-    text: 'Uses',
+    icon: <IconStack />,
+    href: '/stack',
+    text: 'Stack',
   },
   {
     icon: <IconPencil />,
     href: '/blog',
     text: 'Blog',
+  },
+  {
+    icon: <IconPhone />,
+    href: '/contact',
+    text: 'Contact',
   },
 ]
 
@@ -84,26 +84,18 @@ export const FOOTER_LINKS: FooterLinks = [
         href: '/about',
         title: 'About',
       },
-      {
-        href: '/dashboard',
-        title: 'Dashboard',
-      },
     ],
   },
   {
     id: 2,
     links: [
       {
-        href: '/uses',
-        title: 'Uses',
+        href: '/stack',
+        title: 'Stack',
       },
       {
         href: '/projects',
         title: 'Projects',
-      },
-      {
-        href: '/design',
-        title: 'Design',
       },
     ],
   },
@@ -142,15 +134,15 @@ export const HERO_LINKS: HeroLinks = [
     href: 'https://github.com/tszhong0411',
   },
   {
-    id: 'github',
-    label: 'GitHub',
-    icon: <IconFileDownload size={28} />,
-    href: 'https://github.com/tszhong0411',
-  },
-  {
     id: 'twitter',
     label: 'Twitter',
     icon: <IconBrandTwitter size={28} />,
     href: 'https://twitter.com/TszhongLai0411',
+  },
+  {
+    id: 'github',
+    label: 'GitHub',
+    icon: <IconFileDownload size={28} />,
+    href: 'https://github.com/tszhong0411',
   },
 ]

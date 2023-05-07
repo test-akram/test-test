@@ -74,22 +74,6 @@ export const metadata: Metadata = {
   },
 }
 
-// const inter = Inter({
-//   variable: '--font-inter',
-//   subsets: ['latin'],
-// })
-
-// const notoSansTC = Noto_Sans_TC({
-//   variable: '--font-noto-sans-tc',
-//   weight: ['400', '500', '700', '900'],
-//   subsets: ['latin'],
-// })
-
-// const firaCode = Fira_Code({
-//   variable: '--font-fira-code',
-//   subsets: ['latin'],
-// })
-
 const RootLayout = (props: RootLayoutProps) => {
   const { children } = props
 

@@ -1,35 +1,48 @@
 'use client'
-import { useRef, useState } from 'react'
+import { createStyles, rem, SegmentedControl } from '@mantine/core'
+import { useState } from 'react'
 
-import Carousel from '@/components/Carousel/Carousel'
+const useStyles = createStyles((theme) => ({
+  root: {
+    backgroundColor:
+      theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
+    boxShadow: theme.shadows.md,
+    border: `${rem(1)} solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[1]
+    }`,
+  },
+
+  indicator: {
+    backgroundImage: theme.fn.gradient({ from: 'pink', to: 'orange' }),
+  },
+
+  control: {
+    border: '0 !important',
+  },
+
+  label: {
+    '&, &:hover': {
+      '&[data-active]': {
+        color: theme.white,
+      },
+    },
+  },
+}))
 
 const Segmented = () => {
   const [selectedValue2, setSelectedValue2] = useState('complete')
-
+  const { classes } = useStyles()
   return (
     <div className='container'>
-      <Carousel
-        name='group-2'
-        callback={(val) => setSelectedValue2(val)}
-        defaultIndex={1}
-        segments={[
-          {
-            label: 'First',
-            value: 'first',
-            ref: useRef(),
-          },
-          {
-            label: 'Second',
-            value: 'second',
-            ref: useRef(),
-          },
-          {
-            label: 'Third',
-            value: 'third',
-            ref: useRef(),
-          },
-        ]}
+      <SegmentedControl
+        radius='xl'
+        size='md'
+        data={['All', 'AI/ML', 'C++', 'Rust', 'TypeScript']}
+        classNames={classes}
+        value={selectedValue2}
+        onChange={setSelectedValue2}
       />
+
       <div className='mt-8 space-y-2 sm:mt-8 sm:space-y-0  lg:mx-auto xl:mx-0 xl:max-w-none'>
         <div className='divide-y divide-zinc-600 rounded-lg border border-pink-500 bg-zinc-900 shadow-sm'>
           <div className='p-6'>
@@ -42,7 +55,11 @@ const Segmented = () => {
                 {selectedValue2}
               </span>
               <span className='text-base font-medium text-zinc-100'>
-                {selectedValue2}
+                {selectedValue2 === 'All' && 'All content'}
+                {selectedValue2 === 'AI/ML' && 'AI/ML content'}
+                {selectedValue2 === 'C++' && 'C++ content'}
+                {selectedValue2 === 'Rust' && 'Rust content'}
+                {selectedValue2 === 'TypeScript' && 'TypeScript content'}
               </span>
             </p>
           </div>

@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='mt-20 text-sm'>
-        &copy; 小康 {new Date().getFullYear()}
+        &copy; Akrem {new Date().getFullYear()}
       </div>
     </footer>
   )

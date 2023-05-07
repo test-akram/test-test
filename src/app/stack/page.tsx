@@ -8,18 +8,19 @@ import PageTitle from '@/components/PageTitle'
 
 import { site } from '@/config/site'
 
-const title = 'About'
-const description = 'A student who loves web development.'
+const title = 'Stack'
+const description =
+  'This is what type of technologies I am currently using for different tasks and projects.'
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: {
-    canonical: `${site.url}/about`,
+    canonical: `${site.url}/stack`,
   },
   openGraph: {
-    url: `${site.url}/about`,
-    type: 'profile',
+    url: `${site.url}/stack`,
+    type: 'website',
     title,
     siteName: site.title,
     description,
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
 }
 
 const getPage = () => {
-  const page = allPages.find((page) => page.slug === 'about')
+  const page = allPages.find((page) => page.slug === 'stack')
 
   if (!page) {
     return notFound()
@@ -46,13 +47,16 @@ const getPage = () => {
   return page
 }
 
-const AboutPage = () => {
+const UsesPage = () => {
   const page = getPage()
   const MDXComponent = useMDXComponent(page.body.code)
 
   return (
     <>
-      <PageTitle title='About' description='👋 Hi there! I am Akrem.' />
+      <PageTitle
+        title='Stack'
+        description='This is what I use for developement in daily basis.'
+      />
       <div className='prose prose-invert w-full max-w-none'>
         <MDXComponent
           components={{
@@ -64,4 +68,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default UsesPage

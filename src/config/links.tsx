@@ -84,11 +84,20 @@ export const FOOTER_LINKS: FooterLinks = [
         href: '/about',
         title: 'About',
       },
+      {
+        href: '/contact',
+        title: 'Contact',
+      },
     ],
   },
   {
     id: 2,
     links: [
+        {
+        href: '/achievements',
+        title: 'Achievements',
+      },
+
       {
         href: '/stack',
         title: 'Stack',
@@ -103,20 +112,16 @@ export const FOOTER_LINKS: FooterLinks = [
 
 export const FOOTER_SOCIAL_MEDIA: FooterSocialMediaLinks = [
   {
-    href: 'https://www.facebook.com/tszhonglai.0411/',
-    title: 'Facebook',
+    href: 'https://www.linkedin.com/in/akram-ben-ghanem/',
+    title: 'LinkedIn',
   },
   {
-    href: 'https://www.instagram.com/tszhong0411/',
-    title: 'Instagram',
-  },
-  {
-    href: 'https://github.com/tszHong0411',
+    href: 'https://github.com/BarriBarri20',
     title: 'GitHub',
   },
   {
-    href: 'https://www.youtube.com/@tszhong0411',
-    title: 'YouTube',
+    href: 'https://stackoverflow.com/users/15809896/akram-ben-ghanem',
+    title: 'Stackoverflow',
   },
 ]
 

@@ -13,7 +13,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   indicator: {
-    backgroundImage: theme.fn.gradient({ from: 'blue', to: 'purple' }),
+    backgroundImage: theme.fn.gradient({ from: 'white', to: 'black' }),
   },
 
   control: {
@@ -33,38 +33,6 @@ const useStyles = createStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     marginTop: rem(16),
-  },
-
-  content: {
-    marginTop: rem(8),
-    width: '100%',
-    maxWidth: rem(480),
-    backgroundColor: theme.colors.zinc,
-    border: `1px solid ${theme.colors.pink}`,
-    borderRadius: rem(8),
-    boxShadow: theme.shadows.sm,
-  },
-
-  title: {
-    color: theme.colors.white,
-    fontSize: rem(32),
-    fontWeight: 700,
-    lineHeight: rem(40),
-    marginBottom: rem(16),
-  },
-
-  text: {
-    color: theme.colors.zinc,
-    fontSize: rem(16),
-    lineHeight: rem(24),
-    marginBottom: rem(24),
-  },
-
-  highlight: {
-    color: theme.colors.white,
-    fontSize: rem(64),
-    fontWeight: 900,
-    lineHeight: rem(80),
   },
 
   containerWithBorder: {
@@ -87,17 +55,23 @@ const Segmented = () => {
         onChange={setSelectedValue2}
       />
 
-      <div className='border-4 border-white bg-gradient-to-r from-purple-400 to-pink-500 px-12 py-8 text-white md:px-16 md:py-12 lg:px-24 lg:py-16 xl:px-32 xl:py-20'>
-        <h2 className='mb-4 text-4xl font-bold'>{selectedValue2}</h2>
-        <p className='mb-6 text-lg'>
-          {selectedValue2 === 'AI/ML' && 'AI/ML content'}
+      <div className='px-12 py-8 text-white md:px-16 md:py-12 lg:px-24 lg:py-16 xl:px-32 xl:py-20'>
+        <h2 className='mb-4 text-4xl font-bold'>
+          {selectedValue2 === 'ALL' && 'test'}
+          {selectedValue2 === 'AI/ML' && 'AI/t b'}
           {selectedValue2 === 'C++' && 'C++ content'}
           {selectedValue2 === 'Rust' && 'Rust content'}
           {selectedValue2 === 'TypeScript' && 'TypeScript content'}
-        </p>
-        <p className='rounded-full bg-white px-4 py-2 font-bold text-purple-500 transition duration-300 hover:bg-purple-500 hover:text-white'>
-          {selectedValue2}
-        </p>
+        </h2>
+        <div className='space-y-3'>
+          <div key='boo' className='space-y-2'>
+            <p className='text-xl font-semibold'>jjjajja</p>
+            <p className='text-gray-500'>tunisia</p>
+            <p className='text-lg'>fa,kl,efakle,fekfl,valuevca
+            ca,kcced,canonicalcadlk,
+            ceae,kl</p>
+          </div>
+        </div>
       </div>
     </div>
   )

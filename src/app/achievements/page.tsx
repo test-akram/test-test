@@ -7,7 +7,7 @@ import MDXComponents from '@/components/MDXComponents'
 import PageTitle from '@/components/PageTitle'
 
 import { site } from '@/config/site'
-
+import Link from 'next/link'
 const title = 'Achievements'
 const description = 'The list of my achievements.'
 
@@ -53,8 +53,10 @@ const AchievementsPage = () => {
     <>
       <PageTitle
         title='Achievements'
-        description='The list of my Achievements, I am grateful to my colleagues also.'
+        description="
+Although we didn't win the final always, I believe that what really matters most is the companionship and friendship that we shared throughout competitions. Therefore, I would like to take this opportunity to thank all my friends for being there for me and for making the journey enjoyable. We may not have won the material prize, but we can take pride in knowing that we gave it our all and had a great time doing it."
       />
+      
 
       <div className='prose prose-invert w-full max-w-none'>
         <MDXComponent

@@ -14,7 +14,7 @@ const Hero = () => {
           <p className='text-lg'>
             I am a software engineer who is passionate about all technologies,
             thrilling to learn new things, and always looking for new
-            challenges. Interested about the software engineering and AGI.
+            challenges. Interested about AGI and software engineering generally.
           </p>
         </div>
         <div className='h-20 w-20 md:h-28 md:w-28'>

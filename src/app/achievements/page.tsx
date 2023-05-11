@@ -7,7 +7,7 @@ import MDXComponents from '@/components/MDXComponents'
 import PageTitle from '@/components/PageTitle'
 
 import { site } from '@/config/site'
-import Link from 'next/link'
+
 const title = 'Achievements'
 const description = 'The list of my achievements.'
 

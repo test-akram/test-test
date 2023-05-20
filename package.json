@@ -28,7 +28,6 @@
     "@giscus/react": "^2.2.8",
     "@mantine/core": "^6.0.10",
     "@mantine/hooks": "^6.0.10",
-    "@next/font": "^13.3.4",
     "@octokit/rest": "^19.0.7",
     "@prisma/client": "^4.13.0",
     "@radix-ui/react-dialog": "^1.0.3",
@@ -112,7 +111,7 @@
   "eslintConfig": {
     "extends": [
       "next/core-web-vitals",
-      "@tszhong0411/eslint-config"
+      "@barribarri20/eslint-config"
     ],
     "parserOptions": {
       "project": "./tsconfig.json",

@@ -13,7 +13,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "tsx ./src/scripts/generate-og-image.ts",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -111,7 +110,7 @@
   "eslintConfig": {
     "extends": [
       "next/core-web-vitals",
-      "@barribarri20/eslint-config"
+      "@tszhong0411/eslint-config"
     ],
     "parserOptions": {
       "project": "./tsconfig.json",

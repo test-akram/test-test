@@ -93,7 +93,7 @@ export const FOOTER_LINKS: FooterLinks = [
   {
     id: 2,
     links: [
-        {
+      {
         href: '/achievements',
         title: 'Achievements',
       },
@@ -130,24 +130,24 @@ export const HERO_LINKS: HeroLinks = [
     id: 'linkedin',
     label: 'LinkedIn',
     icon: <IconBrandLinkedin size={28} />,
-    href: 'https://www.linkedin.com/in/tszhong0411/',
+    href: 'https://www.linkedin.com/in/akram-ben-ghanem/',
   },
   {
     id: 'github',
     label: 'GitHub',
     icon: <IconBrandGithub size={28} />,
-    href: 'https://github.com/tszhong0411',
+    href: 'https://github.com/BarriBarri20',
   },
   {
     id: 'twitter',
     label: 'Twitter',
     icon: <IconBrandTwitter size={28} />,
-    href: 'https://twitter.com/TszhongLai0411',
+    href: 'https://twitter.com/akram-ben-ghanem',
   },
   {
     id: 'github',
     label: 'GitHub',
     icon: <IconFileDownload size={28} />,
-    href: 'https://github.com/tszhong0411',
+    href: 'https://github.com/BarriBarri20',
   },
 ]

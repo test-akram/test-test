@@ -67,9 +67,10 @@ const Segmented = () => {
           <div key='boo' className='space-y-2'>
             <p className='text-xl font-semibold'>jjjajja</p>
             <p className='text-gray-500'>tunisia</p>
-            <p className='text-lg'>fa,kl,efakle,fekfl,valuevca
-            ca,kcced,canonicalcadlk,
-            ceae,kl</p>
+            <p className='text-lg'>
+              fa,kl,efakle,fekfl,valuevca ca,kcced,canonicalcadlk, ceae,kl
+              ceae,kl
+            </p>
           </div>
         </div>
       </div>

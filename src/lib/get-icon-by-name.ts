@@ -5,18 +5,18 @@ import {
 } from '@tabler/icons-react'
 import {
   IconBook2,
+  IconBrain,
+  IconBrandGithub,
+  IconBrandMysql,
   IconBrandTailwind,
   IconChecks,
+  IconDeviceGamepad2,
   IconLink,
+  IconNews,
   IconPencil,
   IconPhoto,
-  IconBrandGithub,
-  Brain,
-  DeviceGamepad2,
-  Plant,
-  IconBrandMysql,
-  News,
-  Settings2,
+  IconPlant,
+  IconSettings,
   IconTools,
 } from '@tabler/icons-react'
 import {
@@ -26,17 +26,14 @@ import {
   IconBrandPrisma,
   IconBrandPython,
   IconBrandTypescript,
-  IconBrandDjango,
   IconMarkdown,
-  Prompt,
-  IconForm,
+  IconPrompt,
 } from '@tabler/icons-react'
 
 const getIconByName = (name: string) => {
   switch (name) {
-    
     case 'Prompt': {
-      return Prompt
+      return IconPrompt
     }
     case 'Typescript': {
       return IconBrandTypescript
@@ -74,11 +71,11 @@ const getIconByName = (name: string) => {
     case 'Photo': {
       return IconPhoto
     }
-    case 'Game' : {
-      return DeviceGamepad2
+    case 'Game': {
+      return IconDeviceGamepad2
     }
     case 'Plant': {
-      return Plant
+      return IconPlant
     }
     case 'Firebase': {
       return IconBrandFirebase
@@ -96,7 +93,7 @@ const getIconByName = (name: string) => {
       return IconBrandAzure
     }
     case 'News': {
-      return News
+      return IconNews
     }
     case 'Github': {
       return IconBrandGithub
@@ -105,15 +102,11 @@ const getIconByName = (name: string) => {
       return IconBrandMysql
     }
     case 'Machine learning': {
-      return Brain
-    }
-    case 'Form' : {
-      return IconForm
+      return IconBrain
     }
     default: {
-      return Settings2
+      return IconSettings
     }
   }
 }
-
 export default getIconByName

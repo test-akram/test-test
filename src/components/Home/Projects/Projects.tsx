@@ -17,7 +17,7 @@ const Projects = () => {
             <Link
               key={_id}
               href={`/projects/${slug}`}
-              className='flex w-full flex-1 items-center justify-start rounded-lg border border-accent-2 p-4 transition-all duration-300 hover:scale-110 sm:px-6'
+              className='hover:scale-70 flex w-full flex-1 items-center justify-start rounded-lg border border-accent-2 p-4 transition-all duration-300 sm:px-6'
             >
               <Icon />
               <div className='px-4'>

@@ -37,7 +37,7 @@ const Contact = () => {
   return (
     <>
       <div className='mx-auto max-w-3xl overflow-hidden'>
-        <h1 className='md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl'>
+        <h1 className='dark:text-white-100·text-3xl·font-extrabold·leading-9·tracking-tight·text-gray-9'>
           Contact
         </h1>
         <div className='pb-8 pt-10'>
@@ -51,11 +51,6 @@ const Contact = () => {
               href='https://github.com/BarriBarri20'
               title='github'
               icon='BarriBarri20'
-            />
-            <ContactLink
-              href='https://twitter.com/_ParthDesai_'
-              title='twitter'
-              icon='parthdesai2000'
             />
             <ContactLink
               href='https://www.linkedin.com/in/akram-ben-ghanem/'

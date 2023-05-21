@@ -56,7 +56,6 @@ const AchievementsPage = () => {
         description="
 Although we didn't win the final always, I believe that what really matters most is the companionship and friendship that we shared throughout competitions. Therefore, I would like to take this opportunity to thank all my friends for being there for me and for making the journey enjoyable. We may not have won the material prize, but we can take pride in knowing that we gave it our all and had a great time doing it."
       />
-      
 
       <div className='prose prose-invert w-full max-w-none'>
         <MDXComponent

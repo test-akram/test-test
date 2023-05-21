@@ -1,11 +1,10 @@
 'use client'
 
 import {
-  IconBrandFacebook,
   IconBrandGithub,
-  IconBrandInstagram,
-  IconBrandYoutube,
+  IconBrandLinkedin,
   IconCode,
+  IconFileDownload,
   IconLink,
 } from '@tabler/icons-react'
 import {
@@ -61,7 +60,7 @@ const KBar = (props: KBarProps) => {
       keywords: 'source code github',
       section: 'General',
       perform: () =>
-        window.open('https://github.com/tszhong0411/honghong.me', '_blank'),
+        window.open('https://github.com/test-akram/test-test', '_blank'),
       icon: <IconCode />,
     },
     {
@@ -69,34 +68,25 @@ const KBar = (props: KBarProps) => {
       name: 'GitHub',
       keywords: 'github',
       section: 'Social',
-      perform: () => window.open('https://github.com/tszhong0411', '_blank'),
+      perform: () => window.open('https://github.com/BarriBarri20', '_blank'),
       icon: <IconBrandGithub />,
     },
     {
-      id: 'instagram',
-      name: 'Instagram',
-      keywords: 'ig instagram',
-      section: 'Social',
-      perform: () =>
-        window.open('https://instagram.com/tszhong0411/', '_blank'),
-      icon: <IconBrandInstagram />,
+      id: 'resume',
+      name: 'Resume',
+      keywords: 'resume / CV',
+      section: 'General',
+      perform: () => window.open('https://github.com/BarriBarri20', '_blank'),
+      icon: <IconFileDownload />,
     },
     {
-      id: 'youtube',
-      name: 'YouTube',
-      keywords: 'yt youtube',
-      section: 'Social',
-      perform: () => window.open('https://youtube.com/@tszhong0411', '_blank'),
-      icon: <IconBrandYoutube />,
-    },
-    {
-      id: 'facebook',
-      name: 'Facebook',
-      keywords: 'fb facebook',
+      id: 'linkedin',
+      name: 'Linkedin',
+      keywords: 'linkedin / linkedin',
       section: 'Social',
       perform: () =>
-        window.open('https://www.facebook.com/tszhonglai.0411/', '_blank'),
-      icon: <IconBrandFacebook />,
+        window.open('https://linkedin/in/akram-ben-ghanem', '_blank'),
+      icon: <IconBrandLinkedin />,
     },
   ]
 

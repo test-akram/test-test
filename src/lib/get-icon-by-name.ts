@@ -2,7 +2,6 @@ import {
   IconBrandAzure,
   IconBrandFirebase,
   IconBrandGolang,
-  IconFriends,
 } from '@tabler/icons-react'
 import {
   IconBook2,
@@ -11,6 +10,13 @@ import {
   IconLink,
   IconPencil,
   IconPhoto,
+  IconBrandGithub,
+  Brain,
+  DeviceGamepad2,
+  Plant,
+  IconBrandMysql,
+  News,
+  Settings2,
   IconTools,
 } from '@tabler/icons-react'
 import {
@@ -20,11 +26,18 @@ import {
   IconBrandPrisma,
   IconBrandPython,
   IconBrandTypescript,
+  IconBrandDjango,
   IconMarkdown,
+  Prompt,
+  IconForm,
 } from '@tabler/icons-react'
 
 const getIconByName = (name: string) => {
   switch (name) {
+    
+    case 'Prompt': {
+      return Prompt
+    }
     case 'Typescript': {
       return IconBrandTypescript
     }
@@ -61,8 +74,11 @@ const getIconByName = (name: string) => {
     case 'Photo': {
       return IconPhoto
     }
-    case 'Friends': {
-      return IconFriends
+    case 'Game' : {
+      return DeviceGamepad2
+    }
+    case 'Plant': {
+      return Plant
     }
     case 'Firebase': {
       return IconBrandFirebase
@@ -79,8 +95,23 @@ const getIconByName = (name: string) => {
     case 'Azure': {
       return IconBrandAzure
     }
+    case 'News': {
+      return News
+    }
+    case 'Github': {
+      return IconBrandGithub
+    }
+    case 'Mysql': {
+      return IconBrandMysql
+    }
+    case 'Machine learning': {
+      return Brain
+    }
+    case 'Form' : {
+      return IconForm
+    }
     default: {
-      throw Error('Icon not found')
+      return Settings2
     }
   }
 }

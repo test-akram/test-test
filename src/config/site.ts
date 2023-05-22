@@ -20,7 +20,7 @@ export const site: Site = {
   logo: 'https://akrem.me/static/images/avatar.png',
   title: 'Akrem',
   name: 'Akrem',
-  keywords: ['akrem ben ghanem', 'Stage Tunisie', 'Next.js', 'React', 'TypeScript'],
+  keywords: ['akrem', 'Stage Tunisie', 'React', 'TypeScript'],
   titleTemplate: '- Akrem',
   description: 'Akrem • ICT engineering student • Freelancer',
   githubUsername: 'BarriBarri20',

@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   twitter: {
     title: site.name,
     card: 'summary_large_image',
-    site: '@TszhongLai0411',
-    creator: '@TszhongLai0411',
+    site: '@BarriBarri20',
+    creator: '@BarriBarri20',
   },
   keywords: site.keywords,
   themeColor: '#000',

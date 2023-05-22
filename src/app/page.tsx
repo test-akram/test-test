@@ -6,8 +6,8 @@ import { useMDXComponent } from 'next-contentlayer/hooks'
 import Hero from '@/components/Home/Hero'
 import Projects from '@/components/Home/Projects'
 import MDXComponents from '@/components/MDXComponents'
-import Segmented from '@/components/Segmented/Segmented'
 
+// import Segmented from '@/components/Segmented/Segmented'
 import { site } from '@/config/site'
 
 export const metadata: Metadata = {
@@ -42,7 +42,6 @@ const HomePage = () => {
             ...MDXComponents,
           }}
         />
-        <Segmented />
       </div>
     </>
   )

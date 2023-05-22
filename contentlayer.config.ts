@@ -10,7 +10,6 @@ import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 
 import { rehypePrettyCodeOptions } from './src/config/rehype-pretty-code-options'
-import remarkImgToJsx from './src/lib/remark-img-to-jsx'
 
 const Techstack = defineNestedType(() => ({
   name: 'Techstack',
@@ -93,7 +92,7 @@ export default makeSource({
   contentDirPath: 'src/contents',
   documentTypes: [Project, Pages],
   mdx: {
-    remarkPlugins: [remarkGfm, remarkImgToJsx],
+    remarkPlugins: [remarkGfm],
     rehypePlugins: [
       rehypeSlug,
       [rehypePrettyCode, rehypePrettyCodeOptions],

@@ -26,6 +26,7 @@ import {
   IconBrandPrisma,
   IconBrandPython,
   IconBrandTypescript,
+  IconCloudComputing,
   IconMarkdown,
   IconPrompt,
 } from '@tabler/icons-react'
@@ -34,6 +35,9 @@ const getIconByName = (name: string) => {
   switch (name) {
     case 'Prompt': {
       return IconPrompt
+    }
+    case 'CloudComputing': {
+      return IconCloudComputing
     }
     case 'Typescript': {
       return IconBrandTypescript

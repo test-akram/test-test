@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   twitter: {
     title: site.name,
     card: 'summary_large_image',
-    site: '@TszhongLai0411',
-    creator: '@TszhongLai0411',
+    site: '@BarriBarri20',
+    creator: '@BarriBarri20',
   },
   keywords: site.keywords,
   themeColor: '#000',
@@ -82,7 +82,7 @@ const RootLayout = (props: RootLayoutProps) => {
       <body className='from-black-700 overflow-x-hidden bg-opacity-75 bg-gradient-to-r via-fuchsia-500 to-gray-500 font-default text-hong-fg'>
         <KBar>
           <Header />
-          <main className='relative mx-auto mb-16 max-w-4xl px-8 py-24'>
+          <main className='relative mx-auto mb-16 max-w-4xl px-8 py-12'>
             {children}
           </main>
           <CustomToaster />

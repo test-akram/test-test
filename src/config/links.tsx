@@ -148,6 +148,6 @@ export const HERO_LINKS: HeroLinks = [
     id: 'github',
     label: 'GitHub',
     icon: <IconFileDownload size={28} />,
-    href: 'https://github.com/BarriBarri20',
+    href: 'https://drive.google.com/file/d/1DgzqVRTnRRMRmbehoWzjmao2no1mxB2_/view?usp=share_link',
   },
 ]

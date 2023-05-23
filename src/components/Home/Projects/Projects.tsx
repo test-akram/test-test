@@ -6,7 +6,7 @@ import getIconByName from '@/lib/get-icon-by-name'
 
 const Projects = () => {
   return (
-    <div className='my-16 flex flex-col'>
+    <div className='my-6 flex flex-col'>
       <h2 className='mb-8 text-3xl font-bold'>Projects</h2>
       <div className='flex flex-col gap-8'>
         {allProjects.slice(0, 3).map((project) => {
@@ -17,9 +17,9 @@ const Projects = () => {
             <Link
               key={_id}
               href={`/projects/${slug}`}
-              className='hover:scale-70 flex w-full flex-1 items-center justify-start rounded-lg border border-accent-2 p-4 transition-all duration-300 sm:px-6'
+              className='hover:border-accent-12 flex w-full flex-1 items-center justify-start rounded-lg border border-accent-2 p-4 transition-colors duration-150 sm:px-6'
             >
-              <Icon />
+              <Icon size={48} />
               <div className='px-4'>
                 <div>{name}</div>
                 <p>{description}</p>

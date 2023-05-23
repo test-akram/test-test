@@ -19,23 +19,15 @@ const Hero = () => {
           </h2>
           <p className='text-lg'>
             I love building tools that prioritize{' '}
-            <RoughNotation type='highlight' color='blue' show={showAnnotation}>
+            <RoughNotation type='underline' color='blue' show={showAnnotation}>
               functionality
             </RoughNotation>
             ,{' '}
-            <RoughNotation
-              type='highlight'
-              color='yellow'
-              show={showAnnotation}
-            >
+            <RoughNotation type='underline' color='blue' show={showAnnotation}>
               performance
             </RoughNotation>
             , and{' '}
-            <RoughNotation
-              type='highlight'
-              color='purple'
-              show={showAnnotation}
-            >
+            <RoughNotation type='underline' color='blue' show={showAnnotation}>
               reliability
             </RoughNotation>
             . I am an ICT engineering student with over a year of experience as
@@ -44,7 +36,8 @@ const Hero = () => {
             focus on Python and TypeScript. Also I love competing and solving
             challenges.
             <br />I am currently looking for a new adventure!
-            <RoughNotation type='circle' color='yellow' show={showAnnotation}>
+            <br />
+            <RoughNotation type='circle' color='green' show={showAnnotation}>
               Hire me?
             </RoughNotation>
           </p>

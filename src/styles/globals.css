@@ -34,11 +34,11 @@
 
   ::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    @apply bg-red-600;
+    @apply bg-white;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-blue-700;
+    @apply bg-gray-700;
   }
 
   ::selection {

@@ -76,7 +76,11 @@ const KBar = (props: KBarProps) => {
       name: 'Resume',
       keywords: 'resume / CV',
       section: 'General',
-      perform: () => window.open('https://github.com/BarriBarri20', '_blank'),
+      perform: () =>
+        window.open(
+          'https://drive.google.com/file/d/1DgzqVRTnRRMRmbehoWzjmao2no1mxB2_/view?usp=share_link',
+          '_blank'
+        ),
       icon: <IconFileDownload />,
     },
     {

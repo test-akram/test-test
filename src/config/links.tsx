@@ -145,9 +145,9 @@ export const HERO_LINKS: HeroLinks = [
     href: 'https://twitter.com/akram-ben-ghanem',
   },
   {
-    id: 'github',
-    label: 'GitHub',
+    id: 'resume',
+    label: 'Resume',
     icon: <IconFileDownload size={28} />,
-    href: 'https://drive.google.com/file/d/1DgzqVRTnRRMRmbehoWzjmao2no1mxB2_/view?usp=share_link',
+    href: 'https://drive.google.com/file/d/1VhW7OWo1gH74U3fYxks7LKZTvEB_XjaD/view?usp=share_link',
   },
 ]

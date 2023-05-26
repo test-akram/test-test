@@ -60,7 +60,7 @@ const KBar = (props: KBarProps) => {
       keywords: 'source code github',
       section: 'General',
       perform: () =>
-        window.open('https://github.com/test-akram/test-test', '_blank'),
+        window.open('https://github.com/BarriBarri20', '_blank'),
       icon: <IconCode />,
     },
     {
@@ -78,7 +78,7 @@ const KBar = (props: KBarProps) => {
       section: 'General',
       perform: () =>
         window.open(
-          'https://drive.google.com/file/d/1DgzqVRTnRRMRmbehoWzjmao2no1mxB2_/view?usp=share_link',
+          'https://drive.google.com/file/d/1VhW7OWo1gH74U3fYxks7LKZTvEB_XjaD/view?usp=share_link',
           '_blank'
         ),
       icon: <IconFileDownload />,

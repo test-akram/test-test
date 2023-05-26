@@ -59,8 +59,7 @@ const KBar = (props: KBarProps) => {
       name: 'Source code',
       keywords: 'source code github',
       section: 'General',
-      perform: () =>
-        window.open('https://github.com/BarriBarri20', '_blank'),
+      perform: () => window.open('https://github.com/BarriBarri20', '_blank'),
       icon: <IconCode />,
     },
     {

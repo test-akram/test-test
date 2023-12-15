@@ -4,12 +4,12 @@ import Image from './Image'
 import ItemGrid from './ItemGrid'
 import ItemGridStack from './ItemGridStack'
 import Kbd from './Kbd'
-import Link from './Link'
+import AppLink from './Link'
 import Pre from './Pre'
 import Tree from './Tree'
 
 const MDXComponents = {
-  a: Link,
+  a: AppLink,
   pre: Pre,
 
   // Custom components

@@ -16,12 +16,10 @@
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "format": "prettier -w .",
     "type-check": "tsc --noEmit",
     "prepare": "husky install",
     "postinstall": "node node_modules/puppeteer/install.js && prisma generate"
   },
-  "prettier": "@tszhong0411/prettier-config",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@giscus/react": "^2.2.8",
@@ -80,8 +78,6 @@
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "@tailwindcss/typography": "^0.5.9",
-    "@tszhong0411/eslint-config": "^1.0.7",
-    "@tszhong0411/prettier-config": "^1.0.1",
     "@types/node": "^18.16.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
@@ -110,8 +106,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "next/core-web-vitals",
-      "@tszhong0411/eslint-config"
+      "next/core-web-vitals"
     ],
     "parserOptions": {
       "project": "./tsconfig.json",

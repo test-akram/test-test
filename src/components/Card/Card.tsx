@@ -28,7 +28,6 @@ export default function Card({
           <Balancer>
             <ReactMarkdown
               components={{
-                // eslint-disable-next-line unused-imports/no-unused-vars
                 a: ({ node, ...props }) => (
                   // eslint-disable-next-line jsx-a11y/anchor-has-content
                   <a
@@ -37,18 +36,7 @@ export default function Card({
                     {...props}
                     className='font-medium text-gray-800 underline transition-colors'
                   />
-                ),
-                // eslint-disable-next-line unused-imports/no-unused-vars
-                code: ({ node, ...props }) => (
-                  <code
-                    {...props}
-                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                    // @ts-ignore (to fix "Received `true` for a non-boolean attribute `inline`." warning)
-                    // eslint-disable-next-line react/no-unknown-property
-                    inline='true'
-                    className='rounded-sm bg-gray-100 px-1 py-0.5 font-mono font-medium text-gray-800'
-                  />
-                ),
+                )
               }}
             >
               {description}

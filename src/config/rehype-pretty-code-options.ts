@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Options } from 'rehype-pretty-code'
 
 export const rehypePrettyCodeOptions: Partial<Options> = {

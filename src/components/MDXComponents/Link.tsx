@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 type LinkProps = JSX.IntrinsicElements['a']
 
 const Link = (props: LinkProps) => {
-  const { href, children, ...rest } = props
+  const { href, children, ref, ...rest } = props
 
   if ((href as string).startsWith('/')) {
     return (

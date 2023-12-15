@@ -1,4 +1,6 @@
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import clsx from 'clsx'
 import type { Metadata } from 'next'
 // import { Fira_Code, Inter, Noto_Sans_TC } from 'nexst/font/google'
@@ -88,6 +90,7 @@ const RootLayout = (props: RootLayoutProps) => {
           <CustomToaster />
           <Footer />
         </KBar>
+        <SpeedInsights/>
         <Analytics />
       </body>
     </html>

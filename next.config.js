@@ -2,11 +2,6 @@ import { withContentlayer } from 'next-contentlayer'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-    typedRoutes: true,
-  },
-
   transpilePackages: ['@tabler/icons-react'],
 
   images: {

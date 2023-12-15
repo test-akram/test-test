@@ -2165,11 +2165,6 @@
     prettier-plugin-sort-json "^1.0.0"
     prettier-plugin-tailwindcss "^0.2.8"
 
-"@tszhong0411/tsconfig@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@tszhong0411/tsconfig/-/tsconfig-1.0.1.tgz#a8c01c88f4c911ae1aac4a3a6b13ceabad432dc9"
-  integrity sha512-k4PMQkbVvrCwfY5f+15Pe63ekIbQE/nXAMa6apxDnGKg8312D79YpOjeL33dk7P+YmtlOj1dEZv9HqFRnlZrBQ==
-
 "@types/acorn@^4.0.0":
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/@types/acorn/-/acorn-4.0.6.tgz#d61ca5480300ac41a7d973dd5b84d0a591154a22"

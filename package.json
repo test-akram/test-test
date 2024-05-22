@@ -8,7 +8,7 @@
   "author": "Akrem Ben Ghanem <akrambenghanem76@gmail.com> (https://github.com/barribarri20/)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/barribarri20/akrem.me.git"
+    "url": "git+https://github.com/barribarri20/"
   },
   "scripts": {
     "dev": "next dev",

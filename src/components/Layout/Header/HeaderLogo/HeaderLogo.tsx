@@ -12,7 +12,7 @@ const HeaderLogo = () => {
         width={28}
         height={28}
         src='/static/images/avatar.png'
-        alt='this is akrem logo'
+        alt='this is akram logo'
       />
     </Link>
   )

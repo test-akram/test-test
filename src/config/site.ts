@@ -15,14 +15,14 @@ type Site = {
 export const site: Site = {
   url:
     process.env.NODE_ENV === 'production'
-      ? 'https://akrem.me'
+      ? 'https://akrambgh.tech'
       : 'http://localhost:3000',
-  logo: 'https://akrem.me/static/images/avatar.png',
-  title: 'Akrem',
-  name: 'Akrem',
-  keywords: ['akrem', 'Stage Tunisie', 'React', 'TypeScript'],
-  titleTemplate: '- Akrem',
-  description: 'Akrem • ICT engineering student • Freelancer',
+  logo: 'https:/akrambgh.tech/static/images/avatar.png',
+  title: 'Akram',
+  name: 'Akram',
+  keywords: ['akram', 'Stage Tunisie', 'React', 'TypeScript'],
+  titleTemplate: '- Akram',
+  description: 'Akram • ICT engineering student • Freelancer',
   githubUsername: 'BarriBarri20',
   favicons: [
     {

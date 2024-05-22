@@ -52,7 +52,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <PageTitle title='About' description='👋 Hi there! I am Akrem.' />
+      <PageTitle title='About' description='👋 Hi there! I am Akram.' />
       <div className='prose prose-invert w-full max-w-none'>
         <MDXComponent
           components={{

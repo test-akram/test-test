@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   keywords: site.keywords,
   themeColor: '#000',
-  creator: 'akrembenghanem',
+  creator: 'akrambenghanem',
   openGraph: {
     url: `${site.url}`,
     type: 'website',

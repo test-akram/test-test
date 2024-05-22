@@ -13,7 +13,7 @@ const Hero = () => {
     <div className='space-y-6 md:my-16'>
       <div className='flex flex-col-reverse gap-8 md:flex-row md:justify-between'>
         <div className='space-y-4 md:max-w-lg'>
-          <h1 className='text-4xl font-bold text-hong-fg'>Akrem</h1>
+          <h1 className='text-4xl font-bold text-hong-fg'>Akram</h1>
           <h2 className='text-lg font-medium text-accent-5'>
             ICT engineering student • Freelancer
           </h2>
@@ -47,7 +47,7 @@ const Hero = () => {
             src='/static/images/avatar.png'
             width={112}
             height={112}
-            alt='Akrem'
+            alt='Akram'
             rounded='rounded-full'
             loading='eager'
             priority
